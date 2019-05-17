@@ -3,8 +3,8 @@ describe('mostProfitableDepartment' , function(){
         
       assert.deepEqual(mostProfitableDepartment(salesData),'outdoor');
    });
-   it('should determine which of the department is the least profitable' , function(){
+   it('should return zero if the data entered is wrong' , function(){
         
-    assert.deepEqual(mostProfitableDepartment(salesData),'outdoor');
+    assert.deepEqual(mostProfitableDepartment('0pppp'),0);
  });
 });
