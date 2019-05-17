@@ -3,5 +3,8 @@ describe('countAllPaarl' , function(){
         
         assert.equal(countAllPaarl(reg), 3);
     });
-
+    it('should return nothing if it is not from Paarl' , function(){
+        
+        assert.equal(countAllPaarl('CL 123-546, CK 345'), 0);
+    });
 });
